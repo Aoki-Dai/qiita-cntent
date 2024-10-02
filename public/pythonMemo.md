@@ -1,7 +1,10 @@
 ---
 title: paizaでPythonを使う時の備忘録（適宜更新）
 tags:
-  - ''
+  - 'paiza'
+  - 'Python'
+  - '競技プログラミング'
+  - '初心者'
 private: false
 updated_at: ''
 id: null
