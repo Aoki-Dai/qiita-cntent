@@ -1,13 +1,13 @@
 ---
 title: paizaでPythonを使う時の備忘録（適宜更新）
 tags:
-  - 'paiza'
-  - 'Python'
-  - '競技プログラミング'
-  - '初心者'
+  - Python
+  - 初心者
+  - paiza
+  - 競技プログラミング
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-10-03T00:35:34+09:00'
+id: 4ec29f2ecad5f637334c
 organization_url_name: null
 slide: false
 ignorePublish: false
