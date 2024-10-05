@@ -13,7 +13,7 @@ slide: false
 ignorePublish: false
 ---
 # 入力
-## 入力値を整数を整数に変換して取得
+## 入力値を整数（int型）に変換して取得
 ```python
 n = int(input())
 ```
@@ -21,6 +21,7 @@ n = int(input())
 ```python
 a,b=input().split()
 ```
+split関数は**半角スペース、タブ、改行**で文字列を分割することができる。
 ## 複数の値を取得し、int型に変換
 ```python
 n, l = map(int, input().split())
@@ -36,6 +37,13 @@ a = []
 for l in sys.stdin:
     a.append(int(l))
 ```
+### sysモジュール
+- Pythonの標準ライブラリ、Pythonのインタプリタと対話するための機能を提供
+### sys.stdin
+- 入力を読み取るために使う
+### append()
+- リスト（配列）に新しい要素を追加するためのメソッド
+- リストの**最後**に1つの要素を追加する
 ## 入力で複数の値をリスト形式で取得し、int型に変換
 ```python
 price_list = list(map(int, input().split()))
