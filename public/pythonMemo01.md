@@ -6,7 +6,7 @@ tags:
   - paiza
   - 競技プログラミング
 private: false
-updated_at: '2024-10-03T13:56:06+09:00'
+updated_at: '2024-10-05T23:40:50+09:00'
 id: 4ec29f2ecad5f637334c
 organization_url_name: null
 slide: false
