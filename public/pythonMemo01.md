@@ -48,3 +48,57 @@ for l in sys.stdin:
 ```python
 price_list = list(map(int, input().split()))
 ```
+# 配列の処理
+## ループ処理
+```python
+fruits = ['みかん', 'りんご', 'ぶどう']
+for fruit in fruits:
+    print(fruit) 
+```
+**出力**
+```
+みかん
+りんご
+ぶどう
+```
+## 要素の合計
+### for文を使ったやり方
+```python
+list_1 = [1,2,4,8]
+total = 0
+
+for n in list_1:
+    total += n
+
+print(total) 
+# 出力：15
+```
+### sum()関数を使ったやり方
+```python
+list_1 = [1,2,4,8]
+total = sum(list_1)
+
+print(total)
+
+# 出力：15
+```
+sum()関数を使うと簡単に合計を求めることができる。
+## 最大値を取得するmax()関数
+引数の値の中から最大値を返す
+### リストの最大値を取得
+```python
+numbers = [10, 20, 30, 40]
+max_value = max(numbers)
+print(max_value)
+
+# 出力：40
+```
+### key引数を用いて、特定の条件で最大値を取得
+```python
+words = ["apple", "banana", "cherry"]
+longest_word = max(words, key=len)  # 最も長い単語を取得
+print(longest_word)
+
+# 出力：banana
+```
+# 文字列の処理
