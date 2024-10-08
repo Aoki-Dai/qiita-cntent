@@ -102,3 +102,75 @@ print(longest_word)
 # 出力：banana
 ```
 # 文字列の処理
+## 任意の文字列の置き換え、削除ができるreplace()関数
+```python
+s = 'aokidai'
+
+s = s.replace('ai', '')
+print(s)
+# 出力：aokid
+```
+- 空文字列に置き換えすると削除される
+## 辞書形式を用いたreplace関数による文字列の置き換え
+```python
+s = 'aokidai'
+
+# 文字置換用の辞書
+replace_map = {
+    'a': '4',
+    'o': '0',
+    'k': '6',
+    'i': '1',
+}
+
+# 辞書に基づいて文字を置換
+for char, replacement in replace_map.items():
+    s = s.replace(char, replacement)
+
+print(s)
+# 4061dai
+```
+- replace_map.items() は辞書のキーとバリューを取り出す
+  - charはキー（置き換えされる元の文字）
+  - replacementはバリュー（置き換え後の文字）
+## 正規表現を使って文字列を置き換え、削除ができるre.sub()関数
+```python
+import re
+
+s = 'aokidai'
+
+# 正規表現を使って、母音（大文字・小文字）を一度に削除
+s = re.sub(r'[aeiouAEIOU]', '', s)
+
+print(s)
+# 出力：kd
+```
+### 正規表現について
+参照：https://www.megasoft.co.jp/mifes/seiki/meta.html
+## 文字列の長さを取得するlen()関数
+```python
+s = 'aokidai'
+print(len(s))
+# 7
+```
+## 文字列の連結
+```python
+m = 'aoki'
+n = 'dai'
+
+m += n
+print(m)
+# aokidai
+```
+## 文字列の部分一致
+```python
+print('dai' in 'aokidai')
+# True
+```
+## 文字列の中の特定の文字を抽出
+```python
+s = 'aokidai'
+
+print(s[0])
+# a
+```
