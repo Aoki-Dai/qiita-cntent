@@ -174,3 +174,27 @@ s = 'aokidai'
 print(s[0])
 # a
 ```
+# リスト内包表記
+- リスト内包表記とは？
+  - リストを効率的に生成するための簡潔な構文
+## 構文
+```python
+[式 for 要素 in イテラブル if 条件]
+# イテラブル: 反復可能なオブジェクト（リスト、タプル、文字列など）
+```
+## 例：リスト内の要素を2倍にする
+```python
+numbers = [1, 2, 3, 4, 5]
+doubled_numbers = [x * 2 for x in numbers]
+print(doubled_numbers)
+
+# [2, 4, 6, 8, 10]
+```
+## 例：リストの中の偶数を抽出する条件付きリスト内包表記
+```python
+numbers = [1, 2, 3, 4, 5]
+even_numbers = [x for x in numbers if x % 2 == 0]
+print(even_numbers)
+
+# [2, 4]
+```
